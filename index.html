@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PSD 2 HTML - Grid ex!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <section class="container header-wrapper flex align-center">
+            <div class="logo flex-1">
+                Blogin
+                <span>.</span>
+            </div>
+            <nav id="mainMenu" class="main-menu-wrapper">
+                <ul class="main-menu clean-list flex align-center">
+                    <li>
+                        <a href="#" class="active">Journal</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Work</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <button class="toggle-menu-btn fa" onclick="toggleMenu()" alt="Open main menu"></button>
+                <div class="toggle-menu-screen screen" onclick="toggleMenu()" alt="toggle main menu"></div>
+            </nav>
+
+        </section>
+    </header>
+
+    <div class="hero flex justify-center align-center">
+        <h1>PSD to Html grid ex!</h1>
+    </div>
+
+    <main>
+        <div class="main-container">
+
+            <section class="container main-wrapper flex space-between">
+                <div class="text-wrapper">
+
+                    <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+
+                    <a href="#" class="more">Continue Reading</a>
+                </div>
+
+                <!-- <div class="second-panel">
+                    <div class="images images-wrapper grid">
+                        <h2 class="image-item placeholder">CSS Grid Comes Here!</h2>
+                    </div>
+                </div> -->
+
+            </section>
+
+
+            <div class="img-container">
+                <div class="img1"><img src="images/image-001.png" /></div>
+                <div class="img2"><img class="img2" src="images/Layer_4_copy.png" /></div>
+                <div class="img3"><img src="images/Layer_5.png" /></div>
+            </div>
+            <div class="soicel-networks">
+                <div class="footer-img fa">
+                    <a href="https://www.facebook.com"> <i class="fa-facebook-f fa icon"></i> </a>
+                </div>
+                <div class="footer-img  twitter"><a href="https://twitter.com"><i class="fa icon fa-twitter"></i></a>
+                </div>
+                <div class="footer-img fa"><a href="https://worldvectorlogo.com/logo/be-4"><i
+                                class="icon fa fa-behance"></i></a></div>
+                <div class="footer-img dribbble fa"><a href="https://dribbble.com"><i
+                                class="icon fa-dribbble dribbble fa"></i></a></div>
+            </div>
+            <section class="pager main-pager container flex space-between">
+                <button class="prev">Previous</button>
+                <button class="next">Next</button>
+            </section>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <section class="container">
+            <div class="logo">
+                Blogin
+                <span>.</span>
+            </div>
+            <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</small>
+        </section>
+
+
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var mainMenu = document.getElementById('mainMenu');
+            console.log(mainMenu);
+            mainMenu.classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>
