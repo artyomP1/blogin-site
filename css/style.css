@@ -1,8 +1,4 @@
 @charset "UTF-8";
-* {
-    box-sizing: border-box;
-}
-
 
 /* Layout */
 
@@ -14,18 +10,12 @@
 .img-container {
     display: grid;
     grid-gap: 20px;
-    /* grid-template-columns: 378px 218px 620px;
-    grid-template-rows: auto; */
-    /* margin: 20px; */
-    /* width: 642px; */
     grid-template-columns: 378px 218px;
     grid-template-rows: 381px 301px;
     grid-template-areas: "m h" "c c";
-    /* height: 100%; */
     width: 100%;
     margin: 21px;
     margin-bottom: 0;
-    ;
 }
 
 .img1 {
@@ -42,7 +32,6 @@
 
 .img3 {
     height: 301px;
-    ;
     /* grid-column: span 2; */
     grid-area: c;
     width: 620px;
@@ -233,20 +222,6 @@
     }
 }
 
-
-/* .social-wrapper a {
-    display: block;
-    height: 2.5rem;
-    width: 2.5rem;
-    text-align: center;
-    line-height: 40px;
-    background: #e5e5e5;
-    color: #fff;
-    text-decoration: none;
-    margin-right: 1.25rem;
-    transition: all .3s;
-} */
-
 .social-wrapper a:hover {
     background: #516fad;
 }
@@ -290,8 +265,41 @@ a.more:hover {
 }
 
 @media (max-width: 740px) {
-    .container {
+    div.main-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
         max-width: 100%;
+    }
+    div.img-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 95vw;
+        height: auto;
+    }
+    .img {
+        margin: 20px 20px 20px 0;
+        padding-right: 40px;
+    }
+    div.soicel-networks {
+        display: flex;
+        /* justify-content: center; */
+        margin: 0 auto;
+        align-items: center;
+        margin-left: calc(50%-100px);
+        margin-right: calc(50%-100px);
+    }
+    button.next {
+        margin-right: 20px;
+        font-size: 18px
+    }
+    button.prev {
+        margin-left: 20px;
+        font-size: 18px
+    }
+    section.main-pager {
+        border: 0;
+        margin: 0;
     }
 }
 
@@ -328,18 +336,6 @@ button {
 .images-wrapper {
     height: 100%;
 }
-
-
-/* .placeholder {
-    background: url("../images/image-001.jpg");
-    background-position: center center;
-    background-size: cover;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-} */
 
 header {
     background: url("../images/header-bg.gif");
@@ -381,6 +377,20 @@ header .logo {
 }
 
 @media (max-width: 740px) {
+    .main-container {
+        width: 100%;
+    }
+    .container-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    div.text-wrapper {
+        column-count: 1;
+        max-width: 100%;
+        /* width: 600px; */
+        margin-bottom: 20px;
+    }
     .main-menu {
         flex-direction: column;
         position: fixed;
@@ -478,10 +488,6 @@ header .logo {
 }
 
 .main-wrapper {
-    /* border-right: 1px solid #e1e0e0;
-    border-left: 1px solid #e1e0e0; */
-    /* padding: 20px;
-    padding-right: 0; */
     margin: 0;
     margin-top: 20px;
     margin-left: 20px;
@@ -499,12 +505,54 @@ header .logo {
 }
 
 @media (max-width: 980px) {
-    .main-wrapper .first-panel {
-        width: 100%;
+    .container-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .text-wrapper {
         column-count: 2;
         column-gap: 20px;
-        padding-right: 0;
+        width: 700px;
+        padding: 0;
         margin-bottom: 20px;
+    }
+    .img-container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: "m h" "c h";
+        margin: 21px;
+        margin-bottom: 0;
+        height: 500px;
+    }
+    .img-icon {
+        min-width: 700px;
+    }
+    .main-container {
+        border: 1px solid #e1e0e0;
+        background-color: #ffffff;
+        max-width: 740px;
+        margin: 0 auto;
+    }
+    .img1 {
+        grid-area: m;
+        width: 100%;
+        height: 100%;
+    }
+    .img2 {
+        grid-area: h;
+        grid-area: 2 span;
+        width: 100%;
+        height: 100%;
+    }
+    .img3 {
+        width: 100%;
+        height: 100%;
+    }
+    .soicel-networks {
+        margin: 0 auto;
     }
 }
 
