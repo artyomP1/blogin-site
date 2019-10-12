@@ -269,7 +269,7 @@ a.more:hover {
 }
 
 .container {
-    /* max-width: 980px; */
+    max-width: 980px;
     margin: 0 auto;
 }
 
@@ -285,6 +285,8 @@ a.more:hover {
         flex-direction: column;
         height: auto;
         max-width: 100%;
+        width: 100vw;
+        border: 0;
     }
     div.img-container {
         display: flex;
@@ -296,16 +298,14 @@ a.more:hover {
         max-width: 95vw;
     }
     .img {
-        margin: 0 20px 20px 0px;
-        /* padding-right: 40px; */
+        margin: 0 0 20px 0;
+        padding-right: 30px;
     }
     div.soicel-networks {
+        width: 100vw;
         display: flex;
-        /* justify-content: center; */
-        margin: 0 auto;
-        align-items: center;
-        margin-left: calc(50%-100px);
-        margin-right: calc(50%-100px);
+        margin: 0;
+        justify-content: center;
     }
     button.next {
         margin-right: 20px;
@@ -345,6 +345,7 @@ h6 {
 h1 {
     font-size: 3rem;
     letter-spacing: 2px;
+    width: 80%;
 }
 
 button {
@@ -363,7 +364,7 @@ header {
 }
 
 header .header-wrapper {
-    height: 130px;
+    height: 160px;
 }
 
 header .logo {
@@ -478,7 +479,7 @@ header .logo {
 }
 
 .hero {
-    height: 23.4375rem;
+    height: 26rem;
     background-image: url("../images/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -503,6 +504,7 @@ header .logo {
     z-index: 10;
     max-width: 80%;
     text-align: center;
+    line-height: 50px;
 }
 
 .main-wrapper {
@@ -543,7 +545,7 @@ header .logo {
         grid-template-areas: "m h" "c h";
         margin: 21px;
         margin-bottom: 0;
-        height: 300px;
+        height: 500px;
     }
     .img-icon {
         min-width: 700px;
