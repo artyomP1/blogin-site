@@ -55,6 +55,21 @@
 
 /* Fonts */
 
+body {
+    font-family: Lato;
+    color: #606060;
+    font: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    color: #4f4e4e;
+}
+
 
 /* Colors*/
 
@@ -277,9 +292,12 @@ a.more:hover {
         max-width: 95vw;
         height: auto;
     }
+    .img-icon {
+        max-width: 95vw;
+    }
     .img {
-        margin: 20px 20px 20px 0;
-        padding-right: 40px;
+        margin: 0 20px 20px 0px;
+        /* padding-right: 40px; */
     }
     div.soicel-networks {
         display: flex;
@@ -387,7 +405,7 @@ header .logo {
     }
     div.text-wrapper {
         column-count: 1;
-        max-width: 100%;
+        max-width: 97%;
         /* width: 600px; */
         margin-bottom: 20px;
     }
@@ -525,7 +543,7 @@ header .logo {
         grid-template-areas: "m h" "c h";
         margin: 21px;
         margin-bottom: 0;
-        height: 500px;
+        height: 300px;
     }
     .img-icon {
         min-width: 700px;
