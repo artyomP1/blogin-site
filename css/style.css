@@ -550,7 +550,7 @@ header .logo {
     }
     .img-icon {
         min-width: 700px;
-        height: auto;
+        /* height: auto; */
     }
     .main-container {
         border: 1px solid #e1e0e0;
@@ -558,7 +558,7 @@ header .logo {
         max-width: 740px;
         margin: 0 auto;
         /* height: 100%; */
-        height: auto;
+        /* height: auto; */
     }
     img.img1 {
         grid-area: m;
