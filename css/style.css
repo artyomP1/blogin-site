@@ -294,6 +294,9 @@ a.more:hover {
         max-width: 95vw;
         height: auto;
     }
+    .img {
+        width: 100%;
+    }
     .img-icon {
         max-width: 95vw;
     }
@@ -537,7 +540,7 @@ header .logo {
         padding: 0;
         margin-bottom: 20px;
     }
-    #images {
+    .img-container {
         display: grid;
         grid-gap: 20px;
         grid-template-columns: 2fr 1fr;
@@ -560,17 +563,17 @@ header .logo {
         /* height: 100%; */
         /* height: auto; */
     }
-    img.img1 {
+    .img1 {
         grid-area: m;
         width: 100%;
         height: auto;
     }
-    img.img2 {
+    .img2 {
         grid-area: a;
         /* grid-area: 2 span; */
         height: 100%;
     }
-    img.img3 {
+    .img3 {
         grid-area: c;
         width: 100%;
         height: auto;
