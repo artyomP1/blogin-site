@@ -551,12 +551,16 @@ header .logo {
     .img-icon {
         min-width: 700px;
     }
+    body {
+        height: auto;
+    }
     .main-container {
         border: 1px solid #e1e0e0;
         background-color: #ffffff;
         max-width: 740px;
         margin: 0 auto;
         /* height: 100%; */
+        height: auto;
     }
     .img1 {
         grid-area: m;
