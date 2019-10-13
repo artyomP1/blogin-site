@@ -545,7 +545,7 @@ header .logo {
         grid-template-areas: "m h" "c h";
         /* margin: 21px; */
         margin-bottom: 0;
-        height: auto;
+        height: 90%;
         /* height: 500px; */
     }
     .img-icon {
