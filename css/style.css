@@ -558,7 +558,7 @@ header .logo {
         max-width: 740px;
         margin: 0 auto;
         /* height: 100%; */
-        height: auto;
+        /* height: auto; */
     }
     .img1 {
         grid-area: m;
@@ -567,8 +567,8 @@ header .logo {
     }
     .img2 {
         grid-area: h;
-        grid-area: 2 span;
-        height: 100%;
+        /* grid-area: 2 span; */
+        /* height: 100%; */
     }
     .img3 {
         grid-area: c;
