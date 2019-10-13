@@ -569,7 +569,7 @@ header .logo {
         grid-area: h;
         /* grid-area: 2 span; */
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     .img3 {
         grid-area: c;
