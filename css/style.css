@@ -550,6 +550,7 @@ header .logo {
     }
     .img-icon {
         min-width: 700px;
+        height: auto;
     }
     .main-container {
         border: 1px solid #e1e0e0;
