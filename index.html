@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="init()">
 
     <header>
         <section class="container header-wrapper flex align-center">
@@ -40,8 +40,15 @@
         </section>
     </header>
 
-    <div class="hero flex justify-center align-center">
-        <h1>PSD to Html grid ex!</h1>
+    <div class="hero flex flex-column justify-center">
+        <div>
+            <h1>PSD to Html grid ex!</h1>
+        </div>
+        <div class="add-img  flex-column flex  align-center">
+            <div>Add your image</div>
+            <input class="url" type="text" placeholder="Enter your image url">
+            <button class="add-btn" onclick="onAddImg()">Add</button>
+        </div>
     </div>
 
     <main>
@@ -49,41 +56,23 @@
 
             <div class="container-flex">
                 <section class="container main-wrapper flex space-between">
-                    <div id="text" class="text-wrapper">
-
-                        <h2>Duis aute irure dolor in henderit in voluptate.</h2>
-
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiat nulla pariatur.</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
-
-                        <a href="#" class="more">Continue Reading</a>
-                    </div>
+                    <div id="text" class="text-wrapper"> </div>
 
 
                 </section>
                 <div class="img-icon">
-                    <div class="img-container" id="images">
-                        <img class="img1 img" src="images/image-001.png" />
-                        <img class="img2 img" src="images/Layer_4_copy.png" />
-                        <img class="img3 img" src="images/Layer_5.png" />
-                    </div>
+                    <div class="img-container" id="images"></div>
                     <div class="soicel-networks">
                         <div class="footer-img fa">
                             <a href="https://www.facebook.com"> <i class="fa-facebook-f fa icon"></i> </a>
                         </div>
                         <div class="footer-img  twitter"><a href="https://twitter.com"><i
-                                class="fa icon fa-twitter"></i></a>
+                                    class="fa icon fa-twitter"></i></a>
                         </div>
                         <div class="footer-img fa"><a href="https://worldvectorlogo.com/logo/be-4"><i
-                                class="icon fa fa-behance"></i></a></div>
+                                    class="icon fa fa-behance"></i></a></div>
                         <div class="footer-img dribbble fa"><a href="https://dribbble.com"><i
-                                class="icon fa-dribbble dribbble fa"></i></a></div>
+                                    class="icon fa-dribbble dribbble fa"></i></a></div>
                     </div>
                 </div>
             </div>
@@ -109,14 +98,9 @@
 
 
     </footer>
-
-    <script>
-        function toggleMenu() {
-            var mainMenu = document.getElementById('mainMenu');
-            console.log(mainMenu);
-            mainMenu.classList.toggle('open');
-        }
-    </script>
+    <script src="js/util-service.js"></script>
+    <script src="js/blogin-service.js"></script>
+    <script src="js/blogin-controller.js"></script>
 </body>
 
 </html>
