@@ -50,41 +50,6 @@
 }
 
 
-/* Fonts */
-
-body {
-    font-family: Lato;
-    color: #606060;
-    font: 1rem;
-    font-weight: 400;
-    line-height: 1.25rem;
-}
-
-h2 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.875rem;
-    color: #4f4e4e;
-}
-
-
-/* Colors*/
-
-
-/* Borders */
-
-.main-container {
-    border: 1px solid #e1e0e0;
-    background-color: #ffffff;
-    max-width: 980px;
-    margin: 0 auto;
-}
-
-.container {
-    border: 0;
-}
-
-
 /*----------  Lato  ----------*/
 
 @font-face {
@@ -120,6 +85,41 @@ h2 {
     src: url("../fonts/fontawesome/fontawesome-webfont.eot") format("embedded-opentype"), url("../fonts/fontawesome/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome/fontawesome-webfont.svg") format("svg");
     font-weight: normal;
     font-style: normal;
+}
+
+
+/* Fonts */
+
+body {
+    font-family: latobold;
+    color: #606060;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    color: #4f4e4e;
+}
+
+
+/* Colors*/
+
+
+/* Borders */
+
+.main-container {
+    border: 1px solid #e1e0e0;
+    background-color: #ffffff;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.container {
+    border: 0;
 }
 
 .fa {
@@ -362,6 +362,7 @@ h1 {
 div.add-img {
     z-index: 11;
     justify-content: space-around;
+    font-size: 1.35rem;
 }
 
 .add-img div {
@@ -384,6 +385,11 @@ input[placeholder] {
     align-self: center;
     border: none;
     outline: none;
+    background-color: #236811;
+}
+
+.add-btn:hover {
+    background-color: #58c93a;
 }
 
 button {
