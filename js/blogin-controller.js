@@ -38,6 +38,7 @@ function renderStr() {
 
 function onAddImg() {
     var elImg = document.querySelector('.url');
+    addImg(elImg);
     elImg.value = '';
     saveImgToStorage();
 }

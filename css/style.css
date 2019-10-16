@@ -407,9 +407,11 @@ header {
     font-family: latobold, sans-serif;
 }
 
+
+/* 
 header .header-wrapper {
     height: 160px;
-}
+} */
 
 header .logo {
     padding: 0 20px;
@@ -426,7 +428,7 @@ header .logo {
     border-right: 1px solid #1e1e1e;
 }
 
-.main-menu a:first-child {
+ul:first-child {
     border-left: 1px solid #1e1e1e;
 }
 

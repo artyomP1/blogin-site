@@ -26,7 +26,7 @@ function createImage(url, txt) {
     }
 }
 
-function addImg() {
+function addImg(elImg) {
     var newImgUrl = createImage(elImg.value, 'fff');
     gImages.push(newImgUrl);
     renderBlogin();
